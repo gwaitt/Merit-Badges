@@ -6,7 +6,6 @@ console.log(answer);
 var guess = 0;
 var turns = 0;
 while (guess != answer) {
-  	// Prompt user for guess.
     guess=prompt("Guess my number between 1 and 100");
 	if (guess == "q") break;
 	if (validator(guess)==true){
