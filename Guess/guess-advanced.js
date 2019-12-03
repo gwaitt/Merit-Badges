@@ -28,6 +28,7 @@ while (again==true){
 		again = newGame();
 	}
 }
+if (guess != "q") alert("thanks for playing!");
 function validator(guess){
 	if (guess>=0 && guess<=100) {
 		return true;
@@ -38,14 +39,8 @@ function validator(guess){
 }
 	
 function newGame(){
-	newGame = confirm("Would you like to play again?");
-	if (newGame == true) {
-		return true;
-	}
-	else {
-		alert("Thank you for playing!");
-		return false;
-	}
+	var nextGame = confirm("Would you like to play again?");
+	return nextGame;
 }
 
 function gameStats(){
